@@ -6,13 +6,111 @@ html{
 }
 
 body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     color: wheat;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 60px;
     background-color:rgb(38, 50, 56);
     /* background-color:rgb(55, 68, 88); */
     /* background: linear-gradient(to right bottom ,#202b30, #263238); */
-    height: 1vh;
     /* border:1px solid red; */
 }
+
+h1{
+    color: white;
+    /* color: wheat; */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h1 span{
+    color: wheat;
+    font-weight: 700;
+    margin:0 5px 0 0;
+    /* color: white; */
+}
+
+h2{
+    /* border:1px solid red; */
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 span{
+    color: wheat;
+}
+
+#bio{
+    margin-top:30px;
+    color:white;
+    font-size: 18px;
+    width: 610px;
+    line-height: 22px;
+}
+
+#bioWrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+#bioImg{
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+nav{
+    position: fixed;
+    height: 50px;
+    top: 0px;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding-right: 30px;
+    background-color: rgb(33, 44, 49);
+}
+
+nav>div>a{
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px 0px 10px 20px;
+    /* margin-left: 20px;
+    margin-top: 10px;
+    margin-top: 10px; */
+}
+
+nav p{
+    padding-left: 30px;
+}
+
+#wip{
+    font-size: 24px;
+    margin-top: 80px;
+}
+
+#wip ul{
+    color: white;
+    list-style-type: square;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#wip ul li{
+    padding: 10px 0;
+}
+
+#wip ul li a{
+    font-size: 18px;
+    margin-left: 20px;
+    color: white;
+    /* text-decoration: none; */
+}
+
