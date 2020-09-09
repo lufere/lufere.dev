@@ -1,11 +1,13 @@
 html{
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 body{
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -21,10 +23,12 @@ body{
 }
 
 h1{
-    color: white;
+    color: wheat;
     /* color: wheat; */
     font-weight: 700;
     margin-bottom: 10px;
+    display: flex;
+    /* flex-flow: column; */
 }
 
 .lf{
@@ -55,15 +59,15 @@ h1 span:nth-child(even){
     letter-spacing: 0 !important;
 } */
 
-h1 span:nth-child(2){
+h1 div:nth-child(1) span{
     transition-delay: 0s;
 }
 
-h1 span:nth-child(4){
+h1 div:nth-child(2) span{
     transition-delay: 1s;
 }
 
-h1 span:nth-child(6){
+h1 div:nth-child(3) span{
     transition-delay: 2s;
 }
 
@@ -89,12 +93,31 @@ h2 span{
 #bioWrapper{
     display: flex;
     align-items: center;
+    /* flex-flow: column; */
+    /* width: 100%; */
 }
 
 
 #bioImg{
     border-radius: 50%;
     margin-left: 50px;
+}
+
+#links{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fa{
+    /* margin-bottom: 20px; */
+    /* width: 10px; */
+    margin-right:25px;
+    font-size: 30px;
+    color: wheat;
 }
 
 nav{
