@@ -21,7 +21,9 @@
     <div id = "bioWrapper">
         <div>
             <h1>
-                <span>LU</span>IS <span>FE</span>LIPE <span>RE</span>NDON
+                <span class="lf">LU</span><span>IS</span>
+                <span class="lf">FE</span><span>LIPE</span>
+                <span class="lf">RE</span><span>NDÓN</span>
             </h1>
             <h2>Web <span>Dev</span>eloper</h2>
             <p id = bio>Hey! My name is Luis and I'm a Mechatronics engineer with a passion for coding. I'm an avid self learner with solid front end fundamentals. I'm currently learning node.js with the objective of becoming a full stack developer.</p>
@@ -51,6 +53,15 @@
             </li>
         </ul>
     </div>
-    
 </body>
+<script>
+    window.onload = function() {
+        document.querySelectorAll("h1 span:nth-child(even)").forEach((e)=>{
+            // e.className += " loaded";
+            e.style.letterSpacing = 0;
+        })
+    // document.body.className += " loaded";
+    }
+    // document.querySelector('#bioWrapper').addEventListener('mouseenter', loaded)
+</script>
 </html>
