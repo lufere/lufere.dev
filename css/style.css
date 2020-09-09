@@ -156,6 +156,9 @@ nav p{
 #wip{
     font-size: 24px;
     margin-top: 80px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 #wip ul{
