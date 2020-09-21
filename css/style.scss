@@ -20,7 +20,7 @@ body{
     font-size: 18px;
     font-weight: 700;
     width: auto;
-    max-width: 900px;
+    max-width: 600px;
     display: flex;
     flex-flow: column;
 }
@@ -30,6 +30,10 @@ body{
     height:100%;
     display: flex;
     align-items: center;
+
+    div{
+        display: flex;
+    }
 }
 
 #bioInfo{
@@ -42,7 +46,7 @@ body{
 
     p{
         padding: 0 20px;
-        line-height: 20px;
+        line-height: 21px;
     }
 }
 
@@ -69,7 +73,14 @@ h2{
 }
 
 #mobileImg{
-    margin: 20px 0 10px 0;
+    margin: 15px 0 10px 0;
+}
+
+#mobileLinks{
+    // border: 1px solid red;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
 }
 
 #links{
@@ -81,7 +92,7 @@ h2{
 .fa{
     color: $secondary;
     font-size: 30px;
-    margin:0 8px;
+    margin:0 10px;
 }
 
 a{
@@ -90,17 +101,54 @@ a{
 
 @media only screen and (min-width: 600px) {
     h1{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     h2{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 
+@media only screen and (min-width: 992px) {
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 50px;
+    }
 
-// #welcome > div{
-//     display: flex;
-// }
+    #mobileImg{
+        display: none;
+    }
+
+    #desktopImg{
+        display: flex;
+        height: 260px;
+        width: 260px;
+        // border: 1px solid red;
+    }
+
+    #bioInfo{
+        align-items: flex-start;
+
+        p{
+            padding: 0;
+        }
+    }
+
+    #bioInfo{
+        margin-right: 50px;
+    }
+
+    .fa{
+        margin:0 20px 0 0;
+    }
+
+    body{
+        max-width: 950px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
 
 
 // border: 1px solid red;
