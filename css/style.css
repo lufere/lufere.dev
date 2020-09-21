@@ -1,5 +1,88 @@
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 body {
   background-color: #263238;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: auto;
+  max-width: 900px;
+  display: flex;
+  flex-flow: column;
+}
+
+#welcome {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#bioInfo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#bioInfo p {
+  padding: 0 20px;
+  line-height: 20px;
+}
+
+h1 {
+  color: wheat;
+  font-size: 9vw;
+  font-weight: 700;
+  display: flex;
+}
+
+h2 {
+  color: wheat;
+  font-size: 7vw;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#desktopImg {
+  display: none;
+}
+
+.bioImg {
+  border-radius: 50%;
+}
+
+#mobileImg {
+  margin: 20px 0 10px 0;
+}
+
+#links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  color: wheat;
+  font-size: 30px;
+  margin: 0 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

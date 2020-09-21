@@ -2,6 +2,102 @@ $background:rgb(38, 50, 56);
 $secondary: wheat;
 $text: white;
 
-body{
-    background-color: $background;
+html{
+    // border: 1px solid red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    // flex-flow: column;
 }
+
+body{
+    // border: 1px solid red;
+    background-color: $background;
+    color: $text;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: auto;
+    max-width: 900px;
+    display: flex;
+    flex-flow: column;
+}
+
+#welcome{
+    // border: 1px solid red;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+#bioInfo{
+    // border: 1px solid red;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    p{
+        padding: 0 20px;
+        line-height: 20px;
+    }
+}
+
+h1{
+    color: $secondary;
+    font-size: 9vw;
+    font-weight: 700;
+    display: flex;
+}
+
+h2{
+    color: $secondary;
+    font-size: 7vw;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#desktopImg{
+    display: none;
+}
+
+.bioImg{
+    border-radius: 50%;
+}
+
+#mobileImg{
+    margin: 20px 0 10px 0;
+}
+
+#links{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa{
+    color: $secondary;
+    font-size: 30px;
+    margin:0 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+}
+
+// #welcome > div{
+//     display: flex;
+// }
+
+
+// border: 1px solid red;
