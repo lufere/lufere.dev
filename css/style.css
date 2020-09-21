@@ -22,9 +22,10 @@ h1 div:nth-child(3) span {
 }
 
 html {
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 }
 
 #welcome {
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -82,7 +83,7 @@ h2 {
 }
 
 #mobileImg {
-  margin: 15px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 #mobileLinks {
@@ -103,8 +104,47 @@ h2 {
   margin: 0 10px;
 }
 
+.fa-angle-down {
+  position: absolute;
+  font-size: 70px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -15px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.fa-angle-down:hover {
+  transform: scale(1.1);
+}
+
 a {
   text-decoration: none;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+#projects p {
+  color: wheat;
+  padding: 0 10px;
+  text-align: center;
+}
+#projects a {
+  color: wheat;
+  text-decoration: underline;
+}
+#projects ul {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#projects li {
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -151,7 +191,7 @@ a {
   }
 
   body {
-    max-width: 950px;
+    max-width: 930px;
     font-size: 20px;
     font-weight: 700;
   }
