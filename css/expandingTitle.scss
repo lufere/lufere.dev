@@ -1,0 +1,22 @@
+h1 span{
+    display: inline-flex;
+}
+
+h1 span:nth-child(even){
+    overflow: hidden;
+    /* transition-delay: 2s; */
+    transition: ease-in-out 2s;
+    letter-spacing: -1em;
+}
+
+h1 div:nth-child(1) span{
+    transition-delay: 0s;
+}
+
+h1 div:nth-child(2) span{
+    transition-delay: 1s;
+}
+
+h1 div:nth-child(3) span{
+    transition-delay: 2s;
+}

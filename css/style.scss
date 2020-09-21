@@ -2,6 +2,8 @@ $background:rgb(38, 50, 56);
 $secondary: wheat;
 $text: white;
 
+@use 'expandingTitle';
+
 html{
     // border: 1px solid red;
     height: 100%;
@@ -94,6 +96,7 @@ a{
         font-size: 3vw;
     }
 }
+
 
 // #welcome > div{
 //     display: flex;
