@@ -21,6 +21,104 @@ h1 div:nth-child(3) span {
   transition-delay: 2s;
 }
 
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+#projects > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects h2 {
+  color: wheat;
+}
+
+.project {
+  border: 1px solid red;
+  border: 5px solid black;
+  background-color: #464646;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 20px 10px 20px;
+}
+.project img {
+  padding: 0 5px;
+}
+.project .fab {
+  color: wheat;
+  font-size: 30px;
+  margin: 0 10px;
+}
+.project .iconify {
+  color: wheat;
+  margin: 0 10px;
+}
+
+.hoverProject {
+  display: flex;
+  display: none;
+  position: absolute;
+  width: 300px;
+  padding: 0 5px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.671);
+  align-items: center;
+  justify-content: center;
+}
+.hoverProject button {
+  background-color: wheat;
+  border: 2px solid #c0a574;
+  border-radius: 3px;
+}
+
+.skills {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projectName {
+  padding: 10px 0;
+  color: wheat;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -20%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 html {
   height: auto;
   display: flex;
@@ -35,7 +133,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   width: auto;
-  max-width: 600px;
   display: flex;
   flex-flow: column;
 }
@@ -50,7 +147,7 @@ body {
 }
 
 #bioInfo {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -120,31 +217,6 @@ h2 {
 
 a {
   text-decoration: none;
-}
-
-#projects {
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-}
-#projects p {
-  color: wheat;
-  padding: 0 10px;
-  text-align: center;
-}
-#projects a {
-  color: wheat;
-  text-decoration: underline;
-}
-#projects ul {
-  margin-top: 20px;
-  font-size: 20px;
-}
-#projects li {
-  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 600px) {

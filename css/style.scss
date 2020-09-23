@@ -1,9 +1,7 @@
-$background:rgb(38, 50, 56);
-$secondary: wheat;
-$text: white;
-
-@use 'expandingTitle';
-@use 'projects';
+@use './expandingTitle';
+@use './projects';
+@use './tooltip';
+@import './variables';
 
 html{
     // border: 1px solid red;
@@ -22,7 +20,7 @@ body{
     font-size: 18px;
     font-weight: 700;
     width: auto;
-    max-width: 600px;
+    // max-width: 600px;
     display: flex;
     flex-flow: column;
 }
@@ -41,7 +39,7 @@ body{
 #bioInfo{
     // border: 1px solid red;
     // margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -114,37 +112,6 @@ h2{
 
 a{
     text-decoration: none;
-}
-
-#projects{
-    height: 100vh;
-    // border: 1px solid red;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    // transition: all .15s ease-in-out;
-    
-    p{
-        color: $secondary;
-        padding: 0 10px;
-        text-align: center;
-    }
-
-    a{
-        color: $secondary;
-        text-decoration: underline;
-    }
-
-    ul{
-        margin-top: 20px;
-        font-size: 20px;
-    }
-
-    li{
-        margin-bottom: 20px;
-    }
 }
 
 @media only screen and (min-width: 600px) {
