@@ -17,6 +17,8 @@ $projectColor: wheat;
     > div{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     h2{
@@ -24,47 +26,99 @@ $projectColor: wheat;
     }
 }
 
-
-
 .project{
-    border: 1px solid red;
     border: 5px solid black;
     background-color: rgb(70, 70, 70);
     text-align: center;
     border-radius: 10px;
     margin: 0 20px 10px 20px;
 
-    img{
-        padding: 0 5px;
+    a{
+        text-decoration: none;
     }
 
     .fab{
         color: $projectColor;
         font-size: 30px;
         margin:0 10px;
+        text-decoration: none;
+        border: none;
     }
     
     .iconify{
         color: $projectColor;
         margin:0 10px;
+        border: none;
     }
+}
+
+
+.projectName{
+    padding: 10px 0;
+    color: $projectColor;
+    // color: white;
+}
+
+.viewport{
+    height: 170px;
+    width: 300px;
+    // border: 1px solid red;
+
+    img{
+    // width: 300px;
+    object-fit: cover;
+    height: 170px;
+}
+}
+
+.viewport:hover .hoverProject{
+    // display: flex;
+    // transition: all .15s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.viewport:hover{
+    background-color: rgba(0, 0, 0, 0.384);
 }
 
 .hoverProject{
     display: flex;
-    display: none;
+    visibility: hidden;
+    // display: none;
+    opacity: 0;
     position: absolute;
     width: 300px;
-    padding: 0 5px;
-    height: 180px;
+    // padding: auto auto;
+    height: 170px;
     background-color: rgba(0, 0, 0, 0.671);
     align-items: center;
     justify-content: center;
+    transition: visibility 0s, opacity 0.2s linear;
 
-    button{
-        background-color: wheat;
-        border: 2px solid rgb(192, 165, 116);
+    div, button{
+        background-color: rgb(211, 51, 51);
+        border: 2px solid rgb(156, 36, 36);
         border-radius: 3px;
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        a{
+            font-size: 14px;
+            font-weight: 700;
+            padding: 4px 7px;
+            // border: 1px solid red;
+        }
+        a:visited, a{
+            color: black;
+            color: white;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        visibility: visible;
+        opacity: 1;
     }
 }
 
@@ -77,11 +131,10 @@ $projectColor: wheat;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    // border: 1px solid red;
+    // border: 1px solid blue;
+
+    div{
+        border: none;
+    }
 }
 
-.projectName{
-    padding: 10px 0;
-    color: $projectColor;
-    // color: white;
-}
