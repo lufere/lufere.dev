@@ -22,6 +22,7 @@ h1 div:nth-child(3) span {
 }
 
 #projects {
+  position: relative;
   height: 100vh;
   display: flex;
   flex-flow: column;
@@ -119,6 +120,10 @@ h1 div:nth-child(3) span {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.fa-angle-up:hover {
+  transform: scale(1.1);
 }
 
 .skills {
@@ -248,10 +253,10 @@ h2 {
   margin: 0 10px;
 }
 
-.fa-angle-down {
+.fa-angle-down, .fa-angle-up {
   position: absolute;
   font-size: 70px;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   margin-left: -15px;
   cursor: pointer;
