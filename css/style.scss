@@ -23,6 +23,7 @@ body{
     // max-width: 600px;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
 
 #welcome{
@@ -133,6 +134,10 @@ a{
         font-size: 50px;
     }
 
+    #welcome{
+        max-width: 930px;
+    }
+
     #mobileImg{
         display: none;
     }
@@ -161,7 +166,7 @@ a{
     }
 
     body{
-        max-width: 930px;
+        // max-width: 930px;
         font-size: 20px;
         font-weight: 700;
     }

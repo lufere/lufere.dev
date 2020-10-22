@@ -36,6 +36,7 @@ h1 div:nth-child(3) span {
   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #263238 11px), repeating-linear-gradient(#63636355, #636363);
 }
 #projects > div {
+  border: 1px solid blue;
   max-width: 100vw;
   display: flex;
   flex-wrap: wrap;

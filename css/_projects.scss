@@ -7,6 +7,7 @@ $projectColor: wheat;
     position: relative;
     min-height: 100vh;
     height: auto;
+    width: 100vw;
     // border: 1px solid red;
     display: flex;
     flex-flow: column;
@@ -18,7 +19,7 @@ $projectColor: wheat;
     opacity: 1;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #263238 11px ), repeating-linear-gradient( #63636355, #636363 );
     
-    margin: 0 -200px;
+    // margin: 0 -2000px;
     // background-color: rgb(89, 100, 201);
 
     // margin: 0 -200px;
@@ -26,10 +27,14 @@ $projectColor: wheat;
     // transition: all .15s ease-in-out;
     > div{
         // border: 1px solid blue;
+        max-width: 100vw;
         display: flex;
         flex-wrap: wrap;
         // align-items: center;
         justify-content: center;
+        @media only screen and (min-width: 768px) {
+            width: 1200px;
+        }
     }
 
     h2{
