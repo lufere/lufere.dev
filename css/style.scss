@@ -100,18 +100,22 @@ h2{
     position: absolute;
     font-size: 70px;
     bottom: 15px;
-    left: 48%;
-    margin-left: -15px;
+    left: 50%;
+    margin-left: -18px;
+    margin-right: 0px;
     cursor: pointer;
     transition: all .15s ease-in-out;
     // border: 1px solid red;
 }
 
+// .fa-angle-up{
+//     left: 1280px - 25px;
+//     left: calc(50vh - 25px)
+// }
+
 .fa-angle-down:hover{
     transform:scale(1.1);
 }
-
-
 
 a{
     text-decoration: none;
@@ -161,7 +165,7 @@ a{
         margin-right: 50px;
     }
 
-    .fa{
+    #links .fa{
         margin:0 20px 0 0;
     }
 
@@ -170,7 +174,33 @@ a{
         font-size: 20px;
         font-weight: 700;
     }
+
+    .fa-angle-down, .fa-angle-up{
+        margin-left: -22px;
+    }
+
 }
 
 
+@media only screen and (min-width: 800px) {
+    .project{
+        height: 95px + 225px;
+        // background-color: rgb(226, 21, 21);
+    }
+    
+    .viewport{
+        height: 225px;
+        width: 450px;
+    }
+
+    .hoverProject{
+        height: 225px;
+        width: 450px;
+    }
+
+    .portfolioImg{
+        height: 225px;
+        width: 450px;
+    }
+}
 // border: 1px solid red;

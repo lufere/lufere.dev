@@ -1,5 +1,7 @@
 @import './variables';
 $projectColor: wheat;
+$height: 150px;
+$width: 300px;
 // $projectColor: rgb(255, 189, 66);
 
 #projects{
@@ -7,7 +9,7 @@ $projectColor: wheat;
     position: relative;
     min-height: 100vh;
     height: auto;
-    width: 100vw;
+    width: 99vw;
     // border: 1px solid red;
     display: flex;
     flex-flow: column;
@@ -62,6 +64,8 @@ $projectColor: wheat;
     text-align: center;
     border-radius: 10px;
     margin: 0 20px 10px 20px;
+    height: 95px + $height;
+    // border: 1px solid blue;
 
     a{
         text-decoration: none;
@@ -80,6 +84,7 @@ $projectColor: wheat;
         margin:0 10px;
         border: none;
     }
+    
 }
 
 
@@ -90,15 +95,15 @@ $projectColor: wheat;
 }
 
 .viewport{
-    height: 170px;
-    width: 300px;
+    height: $height;
+    width: $width;
     // border: 1px solid red;
 
-    img{
-    // width: 300px;
-    object-fit: cover;
-    height: 170px;
-}
+//     img{
+//     // width: 300px;
+//     object-fit: cover;
+//     height: 170px;
+// }
 }
 
 .viewport:hover .hoverProject{
@@ -118,9 +123,9 @@ $projectColor: wheat;
     // display: none;
     opacity: 0;
     position: absolute;
-    width: 300px;
     // padding: auto auto;
-    height: 170px;
+    height: $height;
+    width: $width;
     background-color: rgba(0, 0, 0, 0.671);
     align-items: center;
     justify-content: center;
@@ -152,6 +157,7 @@ $projectColor: wheat;
     }
 }
 
+
 // .fa-angle-up{
 //     position: absolute;
 //     font-size: 70px;
@@ -181,5 +187,35 @@ $projectColor: wheat;
     div{
         border: none;
     }
+}
+
+.portfolioImg{
+    // border: 1px solid red;
+    background-size: cover;
+    width: $width;
+    height: $height;
+}
+
+.portfolioImgtest{
+    // border: 1px solid red;
+    background-size: cover;
+    width: 689px;
+    height: 350.5px;
+}
+
+.portfolio{
+    background-image: url("../img/portfolio.png");
+}
+
+.battleship{
+    background-image: url("../img/battleship.png");
+}
+
+.library{
+    background-image: url("../img/library.png");
+}
+
+.to-do-list{
+    background-image: url("../img/to-do-list.png");
 }
 
