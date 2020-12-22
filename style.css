@@ -25,7 +25,7 @@ h1 div:nth-child(3) span {
   position: relative;
   min-height: 100vh;
   height: auto;
-  width: 100vw;
+  width: 99vw;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -36,7 +36,6 @@ h1 div:nth-child(3) span {
   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #263238 11px), repeating-linear-gradient(#63636355, #636363);
 }
 #projects > div {
-  border: 1px solid blue;
   max-width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +67,7 @@ h1 div:nth-child(3) span {
   text-align: center;
   border-radius: 10px;
   margin: 0 20px 10px 20px;
+  height: 245px;
 }
 .project a {
   text-decoration: none;
@@ -91,12 +91,8 @@ h1 div:nth-child(3) span {
 }
 
 .viewport {
-  height: 170px;
+  height: 150px;
   width: 300px;
-}
-.viewport img {
-  object-fit: cover;
-  height: 170px;
 }
 
 .viewport:hover .hoverProject {
@@ -113,8 +109,8 @@ h1 div:nth-child(3) span {
   visibility: hidden;
   opacity: 0;
   position: absolute;
+  height: 150px;
   width: 300px;
-  height: 170px;
   background-color: rgba(0, 0, 0, 0.671);
   align-items: center;
   justify-content: center;
@@ -156,6 +152,34 @@ h1 div:nth-child(3) span {
 }
 .skills div {
   border: none;
+}
+
+.portfolioImg {
+  background-size: cover;
+  width: 300px;
+  height: 150px;
+}
+
+.portfolioImgtest {
+  background-size: cover;
+  width: 689px;
+  height: 350.5px;
+}
+
+.portfolio {
+  background-image: url("../img/portfolio.png");
+}
+
+.battleship {
+  background-image: url("../img/battleship.png");
+}
+
+.library {
+  background-image: url("../img/library.png");
+}
+
+.to-do-list {
+  background-image: url("../img/to-do-list.png");
 }
 
 /* Tooltip container */
@@ -231,6 +255,9 @@ body {
   padding: 0 20px;
   line-height: 21px;
 }
+#bioInfo span {
+  color: wheat;
+}
 
 h1 {
   color: wheat;
@@ -280,8 +307,9 @@ h2 {
   position: absolute;
   font-size: 70px;
   bottom: 15px;
-  left: 48%;
-  margin-left: -15px;
+  left: 50%;
+  margin-left: -18px;
+  margin-right: 0px;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
@@ -337,13 +365,37 @@ a {
     margin-right: 50px;
   }
 
-  .fa {
+  #links .fa {
     margin: 0 20px 0 0;
   }
 
   body {
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .fa-angle-down, .fa-angle-up {
+    margin-left: -22px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .project {
+    height: 320px;
+  }
+
+  .viewport {
+    height: 225px;
+    width: 450px;
+  }
+
+  .hoverProject {
+    height: 225px;
+    width: 450px;
+  }
+
+  .portfolioImg {
+    height: 225px;
+    width: 450px;
   }
 }
 
