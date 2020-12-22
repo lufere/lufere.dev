@@ -33,7 +33,9 @@ body{
     align-items: center;
 
     div{
+        // border: 1px solid red;
         display: flex;
+        // justify-content: space-evenly;
     }
 }
 
@@ -46,8 +48,13 @@ body{
     align-items: center;
 
     p{
+        // border: 1px solid blue;
         padding: 0 20px;
         line-height: 21px;
+    }
+
+    #bio{
+        padding-bottom: 10px;
     }
     span{
         color: wheat;
@@ -142,7 +149,11 @@ a{
     }
 
     #welcome{
-        max-width: 930px;
+        max-width: 1030px;
+
+        >div{
+            padding:10px;
+        }
     }
 
     #mobileImg{

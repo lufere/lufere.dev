@@ -139,6 +139,18 @@ h1 div:nth-child(3) span {
     opacity: 1;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hoverProject .fa {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  .hoverProject div > a {
+    font-size: 18px;
+  }
+  .hoverProject div {
+    margin-left: 10px;
+  }
+}
 
 .fa-angle-up:hover {
   transform: scale(1.1);
@@ -255,6 +267,9 @@ body {
   padding: 0 20px;
   line-height: 21px;
 }
+#bioInfo #bio {
+  padding-bottom: 10px;
+}
 #bioInfo span {
   color: wheat;
 }
@@ -341,7 +356,10 @@ a {
   }
 
   #welcome {
-    max-width: 930px;
+    max-width: 1030px;
+  }
+  #welcome > div {
+    padding: 10px;
   }
 
   #mobileImg {
