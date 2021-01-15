@@ -67,7 +67,7 @@ h1 div:nth-child(3) span {
   text-align: center;
   border-radius: 10px;
   margin: 0 20px 10px 20px;
-  height: 245px;
+  min-height: 245px;
 }
 .project a {
   text-decoration: none;
@@ -79,10 +79,29 @@ h1 div:nth-child(3) span {
   text-decoration: none;
   border: none;
 }
+@media only screen and (max-width: 360px) {
+  .project .fab {
+    margin: 0 5px;
+  }
+}
 .project .iconify {
   color: wheat;
   margin: 0 10px;
   border: none;
+}
+@media only screen and (max-width: 360px) {
+  .project .iconify {
+    margin: 0 5px;
+  }
+}
+.project .textIcon {
+  margin: 0 10px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 360px) {
+  .project .textIcon {
+    margin: 0 5px;
+  }
 }
 
 .projectName {
@@ -159,6 +178,7 @@ h1 div:nth-child(3) span {
 .skills {
   padding: 10px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -167,7 +187,7 @@ h1 div:nth-child(3) span {
 }
 .skills > .tooltip > p {
   color: wheat;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .portfolioImg {
@@ -257,9 +277,10 @@ body {
 }
 
 #welcome {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 #welcome div {
   display: flex;
@@ -287,6 +308,7 @@ h1 {
   font-size: 9vw;
   font-weight: 700;
   display: flex;
+  margin-top: 20px;
 }
 
 h2 {

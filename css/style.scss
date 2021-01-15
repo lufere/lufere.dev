@@ -29,10 +29,11 @@ body{
 
 #welcome{
     // border: 1px solid red;
-    height:100vh;
+    min-height:100vh;
     display: flex;
     align-items: center;
-
+    position: relative;
+    // padding-bottom: 40px;
     div{
         // border: 1px solid red;
         display: flex;
@@ -67,6 +68,7 @@ h1{
     font-size: 9vw;
     font-weight: 700;
     display: flex;
+    margin-top: 20px;
 }
 
 h2{

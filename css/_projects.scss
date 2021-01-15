@@ -64,8 +64,10 @@ $width: 300px;
     text-align: center;
     border-radius: 10px;
     margin: 0 20px 10px 20px;
-    height: 95px + $height;
+    min-height: 95px + $height;
     // border: 1px solid blue;
+    // max-width: 90vw;
+    // border: solid red;
 
     a{
         text-decoration: none;
@@ -77,15 +79,40 @@ $width: 300px;
         margin:0 10px;
         text-decoration: none;
         border: none;
+        @media only screen and (max-width: 360px) {margin: 0 5px;}
     }
     
     .iconify{
         color: $projectColor;
         margin:0 10px;
         border: none;
+        @media only screen and (max-width: 360px) {margin: 0 5px;}
     }
+
+    .textIcon{
+        margin: 0 10px;
+        font-size: 20px;
+        @media only screen and (max-width: 360px) {margin: 0 5px;}
+    }
+
     
 }
+
+// #blog{
+//     .skills>.tooltip{
+//         margin-bottom: 20px;
+//     }   
+
+//     .fab{
+//         font-size: 30px;
+//         margin:0px 20px;
+//     }
+    
+//     .iconify{
+//         color: $projectColor;
+//         margin:0 10px;
+//     }
+// }
 
 
 .projectName{
@@ -195,6 +222,7 @@ $width: 300px;
 .skills{
     padding: 10px 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     // border: 1px solid blue;
@@ -204,7 +232,7 @@ $width: 300px;
     }
     >.tooltip>p{
         color: wheat;
-        font-size: 20px;
+        font-size: 16px;
         // border: solid red;
     }
 }
