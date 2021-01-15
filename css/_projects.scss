@@ -202,7 +202,14 @@ $width: 300px;
     div{
         border: none;
     }
+    >.tooltip>p{
+        color: wheat;
+        font-size: 20px;
+        // border: solid red;
+    }
 }
+
+
 
 .portfolioImg{
     // border: 1px solid red;
@@ -232,5 +239,9 @@ $width: 300px;
 
 .to-do-list{
     background-image: url("../img/to-do-list.png");
+}
+
+.blog{
+    background-image: url("../img/blog.png");
 }
 
